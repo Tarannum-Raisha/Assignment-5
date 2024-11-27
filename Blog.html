@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page</title>
+    <!-- daisy ui cnd -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="p-10 bg-yellow-50">
+      <nav>
+        <div class="navbar">
+          <div class="navbar-start">
+            <button class="btn bg-lime-400 glass fixed px-7 font-bold text-lg">
+              <a href="./home.html">Donation</a>
+            </button>
+          </div>
+          <div class="navbar-center space-x-4">
+            <img src="./images/logo.png" alt="" />
+            <p class="font-bold text-2xl">Donate Bangladesh</p>
+          </div>
+          <div class="navbar-end space-x-2 font-bold text-xl">
+            <img src="./images/coin.png" alt="" />
+            <p>5500</p>
+            <p>BDT</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="m-auto mx-14 space-y-5">
+      <h1 class="font-bold text-4xl pb-5">Important FQA ?</h1>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-2xl font-bold">
+          What is the document object (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            The Document Object Model (DOM) is a programming interface that
+            allows programmers to access, modify, and create HTML and XML
+            documents.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          How do you select an element from the DOM ?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            1 . Using getElementById: The getElementById method allows you to
+            select an element by its ID. ... 2 . Using getElementsByClassName:
+            ... 3 . Using getElementsByTagName: ... 4 . Using querySelector: ...
+            5 . Using querySelectorAll: ... 6 . Changing the Text Content. ... 7
+            . Changing the HTML Content. ... 8 . Changing the Attribute Value.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          What is event delegation in the context of the DOM and why is it
+          useful ?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            Event delegation is a design pattern in JavaScript that uses event
+            propagation to handle events at a higher level in the Document
+            Object Model (DOM)
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-bold">
+          How do you mainpulate an element Attribute and style using the DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="font-semibold">
+            Changing an element's style (CSS) attributes is one of the ways in
+            which the DOM can be used. For example, in the code below, the
+            onfocus event handler method is used to change the
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-yellow-50 h-32 mt-14"></footer>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
