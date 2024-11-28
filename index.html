@@ -13,7 +13,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="fixed w-full top-0 left-0 h-52 backdrop-blur-md">
+    <header class="fixed w-full top-0 left-0">
       <!-- navbar section -->
       <nav>
         <div class="navbar px-10 pt-5 pb-10 bg-yellow-50">
@@ -37,13 +37,8 @@
           </div>
         </div>
       </nav>
-    </header>
-
-    <!-- main section -->
-
-    <main>
-      <section>
-        <div class="text-center mt-52 space-x-5 mb-8">
+      <div class="fixed w-full backdrop-blur-sm border-amber-200 border-2">
+        <div class="flex justify-center text-center mt-5 space-x-5 mb-8">
           <button
             id="donation-btn"
             class="btn bg-lime-400 px-5 font-bold text-xl"
@@ -57,13 +52,20 @@
             History
           </button>
         </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+
+    <main class="mt-48">
+      <section>
         <div id="donaton-part">
           <div>
             <!-- noakhali section donation -->
             <div>
               <div class="lg:px-36 px-10 pt-8">
                 <div
-                  class="flex flex-col lg:flex-row gap-5 border rounded-xl p-5"
+                  class="flex flex-col lg:flex-row gap-5 border rounded-xl shadow-md p-5"
                 >
                   <img
                     src="./images/noakhali.png"
@@ -138,7 +140,7 @@
             <div>
               <div class="lg:px-36 px-10 pt-8">
                 <div
-                  class="flex flex-col lg:flex-row gap-5 border rounded-xl p-5"
+                  class="flex flex-col lg:flex-row gap-5 border shadow-md rounded-xl p-5"
                 >
                   <img
                     src="./images/feni.png"
@@ -212,7 +214,7 @@
             <div>
               <div class="lg:px-36 px-10 pt-8">
                 <div
-                  class="flex flex-col lg:flex-row gap-5 border rounded-xl p-5"
+                  class="flex flex-col lg:flex-row gap-5 border shadow-md rounded-xl p-5"
                 >
                   <img
                     src="./images/quota-protest.png"
@@ -290,7 +292,9 @@
       </section>
     </main>
 
-    <footer class="bg-yellow-50 h-40 mt-14"></footer>
+    <footer
+      class="bg-yellow-50 border-t-2 border-amber-200 h-40 mt-14"
+    ></footer>
 
     <script src="./js/home.js"></script>
   </body>

@@ -40,6 +40,8 @@ document
     div.classList.add("py-4");
     div.classList.add("my-4");
     history.append(div);
+
+    amount = "";
   });
 
 // add evenLestener for feni
